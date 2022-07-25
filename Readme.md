@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Денис Башорин](https://up.htmlacademy.ru/adaptive/26/user/2097527).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Желтов](https://up.htmlacademy.ru/profession/frontender/14/htmlcss/34/user/1145037).
 
 ---
 
