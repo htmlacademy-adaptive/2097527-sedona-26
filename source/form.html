@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="" width="" height="" alt="City of Sedona.">
+      <img src="/images/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -46,7 +46,7 @@
     <section class="intro">
       <div class="intro__wrapper">
         <div class="intro__img__wrapper">
-          <img class="intro__img" src="" alt="Sedona">
+          <img class="intro__img" src="/images/form/sedona.svg" width="229" height="39" alt="Sedona">
         </div>
         <div class="intro__title__wrapper intro__titile__wrapper--bevel">
           <h2 class="intro__title">Оставьте свой отзыв</h2>
@@ -81,80 +81,98 @@
             <ul class="contact__list">
               <li class="contact__item">
                 <label class="contact__desc" for="phone-number">Контактный телефон*:</label>
-                <input class="contact__input" id="phone-number" type="number" name="phone-number" required>
+                <div class="contact__input__container">
+                  <input class="contact__input" id="phone-number" type="number" name="phone-number" required>
+                  <span class="contact__input__icon">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z"
+                        fill="#010101" />
+                    </svg>
+                  </span>
+                </div>
               </li>
               <li class="contact__item">
                 <label class="contact__desc" for="email">Электронная почта*:</label>
+                <div class="contact__input__container"></div>
                 <input class="contact__input" id="email" type="email" name="email" required>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__impression impression">
-            <legend class="impression__title">Ваше общее впечатление:</legend>
-            <ul class="impression__list">
-              <li class="impression__item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="impression" value="positive-impression" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="impression__item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="impression" value="negative-impression">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="impression__item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="impression" value="difficult-answer-impression">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__attraction attraction">
-            <legend class="attraction__title">Посещенные достопримечательности:</legend>
-            <ul class="attraction__list">
-              <li class="attraction__item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="devils-bridge" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
-                </label>
-              </li>
-              <li class="attraction__item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="mount-bell" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="attraction__item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="slide-park" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="attraction__item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="red-rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__comment comment">
-            <legend class="comment__title">Опишите свои эмоции:</legend>
-            <textarea rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
-            <button class="comment__submit" type="submit">Отправить отзыв</button>
-          </fieldset>
-          <p class="form__required-field">* — обязательные поля</p>
-        </form>
+                <span class="contact__input__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z"
+                      fill="#000" />
+                  </svg>
+                </span>
+      </div>
+      </li>
+      </ul>
+      </fieldset>
+      <fieldset class="form__impression impression">
+        <legend class="impression__title">Ваше общее впечатление:</legend>
+        <ul class="impression__list">
+          <li class="impression__item">
+            <label class="control">
+              <input class="control-input" type="radio" name="impression" value="positive-impression" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Скорее положительное</span>
+            </label>
+          </li>
+          <li class="impression__item">
+            <label class="control">
+              <input class="control-input" type="radio" name="impression" value="negative-impression">
+              <span class="control-mark"></span>
+              <span class="control-label">Скорее отрицательное</span>
+            </label>
+          </li>
+          <li class="impression__item">
+            <label class="control">
+              <input class="control-input" type="radio" name="impression" value="difficult-answer-impression">
+              <span class="control-mark"></span>
+              <span class="control-label">Затрудняюсь ответить</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__attraction attraction">
+        <legend class="attraction__title">Посещенные достопримечательности:</legend>
+        <ul class="attraction__list">
+          <li class="attraction__item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="devils-bridge" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Мост Дьявола</span>
+            </label>
+          </li>
+          <li class="attraction__item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="mount-bell" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Гора-Колокол</span>
+            </label>
+          </li>
+          <li class="attraction__item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="slide-park" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="attraction__item">
+            <label class="control">
+              <input class="control-input" type="checkbox" name="red-rocks">
+              <span class="control-mark"></span>
+              <span class="control-label">Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__comment comment">
+        <legend class="comment__title">Опишите свои эмоции:</legend>
+        <textarea rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
+        <button class="comment__submit" type="submit">Отправить отзыв</button>
+      </fieldset>
+      <p class="form__required-field">* — обязательные поля</p>
+      </form>
       </div>
     </section>
   </main>
@@ -186,7 +204,12 @@
       <section class="main-footer__developed developed">
         <p class="developed__text">Разработано</p>
         <div class="developed__svg__wrapper">
-          <svg class="developed__svg"></svg>
+          <svg class="developed__svg" width="24" height="29" viewBox="0 0 24 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.13 0h-.09L0 1.2v21L12.04 29 24 22.2v-21L12.13 0ZM22.3 10.29 12.04 4.51v-.09h-.08l-.1-.08v.08L1.7 10.3V2.64l10.26-1.02L22.3 2.64v7.65Zm-10.34-4.5 10.26 5.7-4.02 2.2-6.33-3.57v1.2l5.26 2.97-.8.42-4.46-2.55v1.2l3.39 1.95-.72.42-2.67-1.53v1.2l1.7.93-1.61.93-10.18-5.7 10.18-5.78ZM1.7 12.83l10.17 5.78v.86l-7.05-4v1.19l7.14 4.08v.94l-7.14-4v1.19l7.14 4.08 7.22-4.17v-4.42l3.04-1.7v8.5l-10.26 5.87L1.7 21.26v-8.42Z"
+              fill="#81B3D2" />
+          </svg>
           <span class="visually-hidden">Иконка Академии</span>
         </div>
       </section>
