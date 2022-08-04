@@ -7,13 +7,15 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--style">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="/images/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
-    </a>
+    <div class="main-header__logo logo">
+      <a class="logo__link" href="./index.html">
+        <img src="/img/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
+      </a>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle button main-nav__toggle--style" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
@@ -47,22 +49,27 @@
     <h1 class="visually-hidden">Седона - курортный городок!</h1>
     <section class="intro">
       <div class="intro__img-wrapper">
-        <img class="intro__img" src="/images/index/intro-banner-text.svg" width="282" height="214"
+        <img class="intro__img" src="/img/index/intro-banner-text.svg" width="282" height="214"
           alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'">
       </div>
       <div class="intro__title-wrapper intro__titile-wrapper--bevel">
-        <h2 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h2 class="intro__title intro__title--font">Седона — небольшой<br>городок в Аризоне, заслуживающий большего!
+        </h2>
+        <p class="intro__description intro__description--font">Рассмотрим 5 причин, по которым Седона круче, чем гранд
+          каньон!</p>
       </div>
     </section>
     <section class="advantages">
-      <ol class="advantages__list">
+      <ol class="advantages__list advantages__list--style">
         <li class="advantages__item">
           <div class="advantages-card-img">
-            <h2 class="advantages-card-img__title">Настоящий городок</h2>
-            <p class="advantages-card-img__number">—&nbsp;№1&nbsp;—</p>
-            <p class="advantages-card-img__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <div class="advantages-card-img__img">
+            <div class="advantages-card-img__wrapper">
+              <h2 class="advantages-card-img__title advantages-card-img__title--style">Настоящий городок</h2>
+              <p class="advantages-card-img__number advantages-card-img__number--style">—&nbsp;№1&nbsp;—</p>
+              <p class="advantages-card-img__description advantages-card-img__description--style">Седона не аттракцион
+                для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="advantages-card-img__img advantages-card-img__img--sedona-streat">
               <span class="visually-hidden">Улицы Седоны</span>
             </div>
           </div>
@@ -115,10 +122,12 @@
         </li>
         <li class="advantages__item">
           <div class="advantages-card-img">
-            <h2 class="advantages-card-img__title">Там есть мост дьявола</h2>
-            <p class="advantages-card-img__number">—&nbsp;№2&nbsp;—</p>
-            <p class="advantages-card-img__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <div class="advantages-card-img__img">
+            <div class="advantages-card-img__wrapper">
+            <h2 class="advantages-card-img__title advantages-card-img__title--style">Там есть мост дьявола</h2>
+            <p class="advantages-card-img__number advantages-card-img__number--style">—&nbsp;№2&nbsp;—</p>
+            <p class="advantages-card-img__description advantages-card-img__description--style">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages-card-img__img advantages-card-img__img--devil-bridge">
               <span class="visually-hidden">Мост дьявола</span>
             </div>
           </div>
@@ -156,9 +165,9 @@
       <h2 class="visually-hidden">Седона на карте</h2>
       <iframe class="map__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332008.86989861034!2d-111.8445075187785!3d35.006514354840384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1659298411909!5m2!1sru!2sru"
-        width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ваш
-        браузер
-        не поддерживает интерактивную карту</iframe>
+        width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        Ваш браузер не поддерживает интерактивную карту
+      </iframe>
     </section>
   </main>
   <footer class="main-footer">

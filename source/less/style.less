@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans.woff2") format("woff2"), url("/fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/fonts/ptsansbold.woff2") format("woff2"), url("/fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  cursor: pointer;
+}
+
+@import "./source/less/page.less";
+@import "./source/less/main-header.less";
+@import "./source/less/site-list.less";
+@import "./source/less/main-nav.less";
+@import "./source/less/intro.less";
+@import "./source/less/main-container.less";
+@import "./source/less/logo.less";
+@import "./source/less/advantages.less";
+@import "./source/less/advantages-card-img.less";
+@import "./source/less/advantages-city.less";
+
