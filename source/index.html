@@ -73,7 +73,7 @@
               <span class="visually-hidden">Улицы Седоны</span>
             </div>
           </div>
-          <ul class="advantages-city">
+          <ul class="advantages__city-list advantages-city">
             <li class="advantages-city__item">
               <div class="advantages-city-card">
                 <svg class="advantages-city-card__svg" width="40" height="37" viewBox="0 0 80 80" fill="none"
@@ -123,43 +123,46 @@
         <li class="advantages__item">
           <div class="advantages-card-img">
             <div class="advantages-card-img__wrapper">
-            <h2 class="advantages-card-img__title advantages-card-img__title--style">Там есть мост дьявола</h2>
-            <p class="advantages-card-img__number advantages-card-img__number--style">—&nbsp;№2&nbsp;—</p>
-            <p class="advantages-card-img__description advantages-card-img__description--style">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <h2 class="advantages-card-img__title advantages-card-img__title--style">Там есть мост дьявола</h2>
+              <p class="advantages-card-img__number advantages-card-img__number--style">—&nbsp;№2&nbsp;—</p>
+              <p class="advantages-card-img__description advantages-card-img__description--style">Да, по нему можно
+                пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages-card-img__img advantages-card-img__img--devil-bridge">
               <span class="visually-hidden">Мост дьявола</span>
             </div>
           </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages-card">
-            <h2 class="advantages-card__title">Небольшая площадь</h2>
-            <p class="advantages-card__number">—&nbsp;№3&nbsp;—</p>
-            <p class="advantages-card__description">Все интересные места находятся очень близко</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages-card">
-            <h2 class="advantages-card__title">Красивая дорога</h2>
-            <p class="advantages-card__number">—&nbsp;№4&nbsp;—</p>
-            <p class="advantages-card__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages-card">
-            <h2 class="advantages-card__title">Мало туристов</h2>
-            <p class="advantages-card__number">—&nbsp;№5&nbsp;—</p>
-            <p class="advantages-card__description">Большинство едет в гранд каньони толпится там</p>
-          </div>
-        </li>
+        <div class="advantages__item-wrapper">
+          <li class="advantages__item">
+            <div class="advantages-card">
+              <h2 class="advantages-card__title">Небольшая площадь</h2>
+              <p class="advantages-card__number">—&nbsp;№3&nbsp;—</p>
+              <p class="advantages-card__description">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-card">
+              <h2 class="advantages-card__title">Красивая дорога</h2>
+              <p class="advantages-card__number">—&nbsp;№4&nbsp;—</p>
+              <p class="advantages-card__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-card">
+              <h2 class="advantages-card__title">Мало туристов</h2>
+              <p class="advantages-card__number">—&nbsp;№5&nbsp;—</p>
+              <p class="advantages-card__description">Большинство едет в гранд каньони толпится там</p>
+            </div>
+          </li>
+        </div>
       </ol>
     </section>
     <section class="hotel-search">
-      <h2 class="hotel-search__title">Заинтересовались?</h2>
-      <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+      <h2 class="hotel-search__title hotel-search__title--font">Заинтересовались?</h2>
+      <p class="hotel-search__description hotel-search__description--font">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в седоне</p>
-      <button class="hotel-search__button" type="button">Найти гостиницу</button>
+      <button class="hotel-search__button button hotel-search__button--style" type="button">Найти гостиницу</button>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
@@ -172,23 +175,23 @@
   </main>
   <footer class="main-footer">
     <section class="main-footer__hash-tag hash-tag">
-      <p class="hash-tag__text">#visitSEDONA</p>
+      <p class="hash-tag__text hash-tag__text--style">#visitSEDONA</p>
     </section>
     <section class="main-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+        <li class="social__item social__link--vkontakte">
+          <a class="social__link " href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
+        <li class="social__item social__link--telegram">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
+        <li class="social__item social__link--youtube">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
