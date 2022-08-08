@@ -1,0 +1,51 @@
+.intro {
+  min-width: 320px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 37px;
+    background-color: #81b3d2;
+    background-image: url("../img/index/intro-second-triangle.svg");
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.intro__img-wrapper {
+  box-sizing: border-box;
+  min-height: 389px;
+  background-color: rgb(89, 166, 230);
+  padding: 90px 0 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/background-intro.jpg");
+}
+
+.intro__title-wrapper {
+  padding: 32px 20px 16px 20px;
+  text-align: center;
+}
+
+.intro__title {
+  margin: 0 0 35px 0;
+
+  &--font {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+.intro__description {
+  margin: 0;
+
+  &--font {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}

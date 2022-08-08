@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--style">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="/images/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
+    <a class="main-header__logo" href="./index.html">
+      <img src="img/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle button" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+        </svg>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--current">
@@ -42,13 +45,13 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Отзывы о Седоне</h1>
-    <section class="intro">
-      <div class="intro__img-wrapper">
-        <img class="intro__img" src="/images/form/sedona.svg" width="229" height="39" alt="Sedona">
+    <section class="hero-form">
+      <div class="hero-form__img-wrapper">
+        <img class="hero-form__img" src="img/form/sedona.svg" width="229" height="39" alt="Sedona">
       </div>
-      <div class="intro__title-wrapper intro__titile-wrapper--bevel">
-        <h2 class="intro__title">Оставьте свой отзыв</h2>
-        <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+      <div class="hero-form__title-wrapper hero-form__title-wrapper--bevel">
+        <h2 class="hero-form__title hero-form__title--font">Оставьте свой отзыв</h2>
+        <p class="hero-form__description hero-form__description--font">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -56,28 +59,28 @@
       <span class="visually-hidden">Форма отзыва о Седоне</span>
       <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__full-name full-name">
-          <legend class="full-name__title">Представьтесь:</legend>
+          <legend class="full-name__title full-name__title--font">Представьтесь:</legend>
           <ul class="full-name__list">
             <li class="full-name__item">
-              <label class="full-name__desc" for="first-name">Имя*:</label>
-              <input class="full-name__input" id="first-name" type="text" name="first-name" required>
+              <label class="full-name__desc full-name__desc--font" for="first-name">Имя*:</label>
+              <input class="full-name__input full-name__input--font" id="first-name" type="text" name="first-name" required>
             </li>
             <li class="full-name__item">
-              <label class="full-name__desc" for="surname">Фамилия*:</label>
-              <input class="full-name__input" id="surname" type="text" name="surname" required>
+              <label class="full-name__desc full-name__desc--font" for="surname">Фамилия*:</label>
+              <input class="full-name__input full-name__input--font" id="surname" type="text" name="surname" required>
             </li>
             <li class="full-name__item">
-              <label class="full-name__desc" for="patronymic">Отчество:</label>
-              <input class="full-name__input" id="patronymic" type="text" name="patronymic">
+              <label class="full-name__desc full-name__desc--font" for="patronymic">Отчество:</label>
+              <input class="full-name__input full-name__input--font" id="patronymic" type="text" name="patronymic">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__contact contact">
-          <legend class="contact__title">Контактная информация:</legend>
+          <legend class="contact__title contact__title--font">Контактная информация:</legend>
           <ul class="contact__list">
             <li class="contact__item">
-              <label class="contact__desc" for="phone-number">Контактный телефон*:</label>
-              <div class="contact__input__container">
+              <label class="contact__desc contact__desc--font" for="phone-number">Контактный телефон*:</label>
+              <div class="contact__input-container">
                 <input class="contact__input" id="phone-number" type="number" name="phone-number" required>
                 <span class="contact__input__icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,107 +92,107 @@
               </div>
             </li>
             <li class="contact__item">
-              <label class="contact__desc" for="email">Электронная почта*:</label>
-              <div class="contact__input__container"></div>
-              <input class="contact__input" id="email" type="email" name="email" required>
-              <span class="contact__input__icon">
-                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z"
-                    fill="#000" />
-                </svg>
-              </span>
+              <label class="contact__desc contact__desc--font" for="email">Электронная почта*:</label>
+              <div class="contact__input-container">
+                <input class="contact__input" id="email" type="email" name="email" required>
+                <span class="contact__input__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z"
+                      fill="#000" />
+                  </svg>
+                </span>
               </div>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__impression impression">
-          <legend class="impression__title">Ваше общее впечатление:</legend>
+          <legend class="impression__title impression__title--font">Ваше общее впечатление:</legend>
           <ul class="impression__list">
             <li class="impression__item">
               <label class="control">
                 <input class="control-input" type="radio" name="impression" value="positive-impression" checked>
                 <span class="control-mark"></span>
-                <span class="control-label">Скорее положительное</span>
+                <span class="control-label control-label--font">Скорее положительное</span>
               </label>
             </li>
             <li class="impression__item">
               <label class="control">
                 <input class="control-input" type="radio" name="impression" value="negative-impression">
                 <span class="control-mark"></span>
-                <span class="control-label">Скорее отрицательное</span>
+                <span class="control-label control-label--font">Скорее отрицательное</span>
               </label>
             </li>
             <li class="impression__item">
               <label class="control">
                 <input class="control-input" type="radio" name="impression" value="difficult-answer-impression">
                 <span class="control-mark"></span>
-                <span class="control-label">Затрудняюсь ответить</span>
+                <span class="control-label control-label--font">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__attraction attraction">
-          <legend class="attraction__title">Посещенные достопримечательности:</legend>
+          <legend class="attraction__title attraction__title--font">Посещенные достопримечательности:</legend>
           <ul class="attraction__list">
             <li class="attraction__item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="devils-bridge" checked>
                 <span class="control-mark"></span>
-                <span class="control-label">Мост Дьявола</span>
+                <span class="control-label control-label--font">Мост Дьявола</span>
               </label>
             </li>
             <li class="attraction__item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="mount-bell" checked>
                 <span class="control-mark"></span>
-                <span class="control-label">Гора-Колокол</span>
+                <span class="control-label control-label--font">Гора-Колокол</span>
               </label>
             </li>
             <li class="attraction__item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="slide-park" checked>
                 <span class="control-mark"></span>
-                <span class="control-label">Слайд-парк</span>
+                <span class="control-label control-label--font">Слайд-парк</span>
               </label>
             </li>
             <li class="attraction__item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="red-rocks">
                 <span class="control-mark"></span>
-                <span class="control-label">Красные скалы</span>
+                <span class="control-label control-label--font">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__comment comment">
-          <legend class="comment__title">Опишите свои эмоции:</legend>
-          <textarea rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
-          <button class="comment__submit" type="submit">Отправить отзыв</button>
+          <legend class="comment__title comment__title--font">Опишите свои эмоции:</legend>
+          <textarea class="comment__textarea" rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
+          <button class="comment__submit button comment__submit--font" type="submit">Отправить отзыв</button>
         </fieldset>
-        <p class="form__required-field">* — обязательные поля</p>
+        <p class="form__required-field form__required-field--font">* — обязательные поля</p>
       </form>
     </section>
   </main>
   <footer class="main-footer">
     <section class="main-footer__hash-tag hash-tag">
-      <p class="hash-tag__text">#visitSEDONA</p>
+      <p class="hash-tag__text hash-tag__text--style">#visitSEDONA</p>
     </section>
     <section class="main-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+        <li class="social__item social__link--vkontakte">
+          <a class="social__link " href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
+        <li class="social__item social__link--telegram">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
+        <li class="social__item social__link--youtube">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
