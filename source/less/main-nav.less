@@ -1,6 +1,6 @@
 .main-nav {
   position: block;
-  width: 320px;
+  min-width: 320px;
   min-height: 56px;
 }
 
@@ -12,4 +12,14 @@
   padding: 17px 20px 10px 10px;
   border: none;
   background-color: #ffffff;
+}
+
+.main-nav__list {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
