@@ -9,6 +9,7 @@
 .comment__title {
   padding: 24px 20px 0 20px;
   margin-bottom: 20px;
+  text-align: center;
 
   &--font {
     font-size: 18px;
@@ -49,5 +50,32 @@
     line-height: 21px;
     text-transform: uppercase;
     color: rgba(51, 51, 51, 0.6);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    width: @tablet-width;
+  }
+
+  .comment__textarea {
+    display: block;
+    margin: 0 auto 48px auto;
+    width: calc(@tablet-width - (2 * 60px));
+  }
+
+  .form__required-field {
+    padding-top: 24px;
+    margin: 0 0 auto auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: @desktop-width;
+  }
+
+  .comment__textarea {
+    width: calc(@desktop-width - (2 * 120px + 192px));
   }
 }

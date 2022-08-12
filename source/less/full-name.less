@@ -59,3 +59,15 @@
     color: #000000;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .full-name {
+    width: calc(@tablet-width / 2 - 120px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .full-name {
+    width: calc(@desktop-width / 2 - 240px);
+  }
+}

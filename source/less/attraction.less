@@ -41,3 +41,25 @@
     color: #000000;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .attraction {
+    width: @tablet-width;
+  }
+
+  .attraction__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+
+  .attraction__item {
+    width: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attraction {
+    width: @desktop-width;
+  }
+}
