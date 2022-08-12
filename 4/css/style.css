@@ -960,12 +960,15 @@
     gap: 64px;
   }
   .attraction__item {
-    width: 192px;
+    width: 224px;
   }
 }
 @media (min-width: 1200px) {
   .attraction {
     width: 1200px;
+  }
+  .attraction__item {
+    width: 192px;
   }
 }
 .comment {
