@@ -12,6 +12,10 @@
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -29,15 +33,20 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .intro::after {
-    display: none;
-  }
-}
-
 .intro__title-wrapper {
   padding: 32px 20px 16px 20px;
   text-align: center;
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 20px 55px 20px;
+    width: 520px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 59px 20px 45px 20px;
+  }
 }
 
 .intro__title {

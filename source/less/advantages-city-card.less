@@ -1,11 +1,117 @@
 .advantages-city-card {
   display: flex;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages-city-card {
+  &--home {
+    gap: 7px;
+
+    @media (min-width: @tablet-width) {
+      width: 185px;
+      gap: 26px;
+      padding-top: 3px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 287px;
+      padding-top: 2px;
+    }
+  }
+
+  &--eat {
+    gap: 12px;
+
+    @media (min-width: @tablet-width) {
+      width: 183px;
+      gap: 26px;
+      padding-top: 6px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 320px;
+      padding-top: 6px;
+    }
+  }
+
+  &--present {
+    gap: 4px;
+
+    @media (min-width: @tablet-width) {
+      width: 193px;
+      gap: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 249px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+.advantages-city-card__title {
+  margin: 8px auto 16px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px 0;
+  }
+}
+
+.advantages-city-card__description {
+  margin: 0 auto 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages-city-card__svg {
+  @media (max-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.advantages-city-card__container {
+  min-width: 100px;
+
+  &--primary {
+    width: 225px;
+
+    @media (min-width: @tablet-width) {
+      width: 170px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+
+  &--secondary {
+    width: 232px;
+
+    @media (min-width: @tablet-width) {
+      width: 155px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 300px;
+    }
+  }
+
+  &--tertiary {
+    width: 202px;
+
+    @media (min-width: @tablet-width) {
+      width: 192px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 195px;
+    }
   }
 }

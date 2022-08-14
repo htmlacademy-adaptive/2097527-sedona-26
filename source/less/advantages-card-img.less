@@ -3,38 +3,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages-card-img {
+  @media (min-width: @tablet-width) {
     flex-direction: row;
     width: @tablet-width;
   }
 
-  .advantages-card-img__wrapper {
-    box-sizing: border-box;
-    width: 256px;
-    min-height: 256px;
-  }
-
-  .advantages-card-img__img {
-    width: 512px;
-    min-height: 256px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .advantages-card-img__wrapper {
-    box-sizing: border-box;
-    width: 400px;
-  }
-
-  .advantages-card-img__img {
-    width: 800px;
-    height: 256px;
-  }
-
-  .advantages-card-img {
+  @media (min-width: @desktop-width) {
     flex-direction: row;
     width: @desktop-width;
   }
@@ -44,9 +19,15 @@
   margin: 0 0 11px 0;
 
   &--style {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -55,7 +36,6 @@
 
   &--style {
     text-transform: uppercase;
-    font-weight: 700;
   }
 }
 
@@ -70,6 +50,31 @@
 .advantages-card-img__wrapper {
   padding: 33px 22px 40px 16px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 256px;
+    min-height: 256px;
+    padding: 40px 32px 44px 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 47px 52px 56px 53px;
+  }
+
+  &--secondary {
+    padding: 39px 16px 35px 15px;
+
+    @media (min-width: @tablet-width) {
+      padding: 43px 36px 41px 36px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 51px 78px 53px 79px;
+    }
+  }
 }
 
 .advantages-card-img__img {
@@ -77,20 +82,42 @@
   margin: 0;
   padding: 0;
   background-color: #60d11e;
+  min-height: 260px;
 
   &--sedona-streat {
     background-image: url("../img/index/sedona-streat.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    @media (min-width: @desktop-width) {
+      background-position: 50% -68px;
+    }
   }
 
   &--devil-bridge {
     background-image: url("../img/index/devil-bridge.jpg");
     background-repeat: no-repeat;
-  }
-}
+    background-size: cover;
+    background-position: 50% -2px;
 
-@media (max-width: @tablet-width) {
-  .advantages-card-img__img {
-    min-height: 260px;
+    @media (min-width: @tablet-width) {
+      background-position: 50%;
+      order: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 50% -16px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    min-height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 256px;
   }
 }
