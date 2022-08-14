@@ -1,6 +1,43 @@
 .advantages-card-img {
   background-color: #81b3d2;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-card-img {
+    flex-direction: row;
+    width: @tablet-width;
+  }
+
+  .advantages-card-img__wrapper {
+    box-sizing: border-box;
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .advantages-card-img__img {
+    width: 512px;
+    min-height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-card-img__wrapper {
+    box-sizing: border-box;
+    width: 400px;
+  }
+
+  .advantages-card-img__img {
+    width: 800px;
+    height: 256px;
+  }
+
+  .advantages-card-img {
+    flex-direction: row;
+    width: @desktop-width;
+  }
 }
 
 .advantages-card-img__title {
@@ -37,8 +74,6 @@
 
 .advantages-card-img__img {
   display: block;
-  width: 320px;
-  height: 260px;
   margin: 0;
   padding: 0;
   background-color: #60d11e;
@@ -51,5 +86,11 @@
   &--devil-bridge {
     background-image: url("../img/index/devil-bridge.jpg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .advantages-card-img__img {
+    min-height: 260px;
   }
 }

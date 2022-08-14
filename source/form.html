@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__body--style">
   <header class="main-header">
-    <a class="main-header__logo" href="./index.html">
-      <img src="img/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
-    </a>
+    <div class="main-header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
+      </a>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle button" type="button">
+      <button class="main-nav__toggle button main-nav__toggle--style" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
@@ -30,6 +33,7 @@
             Фото и видео
           </a>
         </li>
+        <li class="site-list__item site-list__logo-place"></li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">
             Форма отзыва
@@ -51,7 +55,8 @@
       </div>
       <div class="hero-form__title-wrapper hero-form__title-wrapper--bevel">
         <h2 class="hero-form__title hero-form__title--font">Оставьте свой отзыв</h2>
-        <p class="hero-form__description hero-form__description--font">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <p class="hero-form__description hero-form__description--font">Помогите нашим отелям стать лучше! оставьте отзыв
+          о них, а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -63,7 +68,8 @@
           <ul class="full-name__list">
             <li class="full-name__item">
               <label class="full-name__desc full-name__desc--font" for="first-name">Имя*:</label>
-              <input class="full-name__input full-name__input--font" id="first-name" type="text" name="first-name" required>
+              <input class="full-name__input full-name__input--font" id="first-name" type="text" name="first-name"
+                required>
             </li>
             <li class="full-name__item">
               <label class="full-name__desc full-name__desc--font" for="surname">Фамилия*:</label>
@@ -167,9 +173,10 @@
         </fieldset>
         <fieldset class="form__comment comment">
           <legend class="comment__title comment__title--font">Опишите свои эмоции:</legend>
-          <textarea class="comment__textarea" rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
-          <button class="comment__submit button comment__submit--font" type="submit">Отправить отзыв</button>
+          <textarea class="comment__textarea" rows="10" cols="45" name="comment"
+            placeholder="Опишите подробно все свои восторги "></textarea>
         </fieldset>
+        <button class="comment__submit button comment__submit--font" type="submit">Отправить отзыв</button>
         <p class="form__required-field form__required-field--font">* — обязательные поля</p>
       </form>
     </section>

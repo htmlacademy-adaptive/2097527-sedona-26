@@ -1,9 +1,9 @@
 .advantages-card {
-  width: 284px;
+  box-sizing: border-box;
   color: #000000;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 18px;
   text-transform: uppercase;
 }
 
@@ -20,4 +20,16 @@
 .advantages-card__description {
   margin: 0;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-card {
+    width: calc(@tablet-width / 3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-card {
+    width: calc(@desktop-width / 3);
+  }
 }

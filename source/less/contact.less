@@ -72,3 +72,31 @@
 .contact__input-container {
   display: flex;
 }
+
+@media (min-width: @tablet-width) {
+  .form {
+    justify-content: space-between;
+  }
+
+  .contact {
+    width: 280px;
+  }
+
+  .contact__list {
+    align-items: flex-end;
+  }
+
+  .contact__item {
+    width: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact {
+    width: 430px;
+  }
+
+  .contact__item {
+    width: 402px;
+  }
+}

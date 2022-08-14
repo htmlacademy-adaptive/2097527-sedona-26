@@ -9,6 +9,7 @@
     height: 37px;
     background-color: #81b3d2;
     background-image: url("../img/index/intro-second-triangle.svg");
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
   }
@@ -17,12 +18,17 @@
 .intro__img-wrapper {
   box-sizing: border-box;
   min-height: 389px;
-  background-color: rgb(89, 166, 230);
   padding: 90px 0 0 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/background-intro.jpg");
+  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/background-intro.jpg") no-repeat, rgb(89, 166, 230);
+}
+
+@media (min-width: @tablet-width) {
+  .intro::after {
+    display: none;
+  }
 }
 
 .intro__title-wrapper {

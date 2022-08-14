@@ -41,3 +41,24 @@
     color: #000000;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .impression {
+    width: @tablet-width;
+  }
+
+  .impression__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .impression__item {
+    width: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression {
+    width: @desktop-width;
+  }
+}

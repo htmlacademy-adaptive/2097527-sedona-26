@@ -4,3 +4,20 @@
   width: 280px;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .form {
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: @tablet-width;
+    padding: 0 60px 64px 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: @desktop-width;
+    padding: 0 120px 64px 120px;
+  }
+}
