@@ -46,6 +46,14 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
+
+    &:first-child img {
+      height: 400px;
+    }
+
+    &:not(:first-child) img {
+      height: 267px;
+    }
   }
 
   @media (min-width: @desktop-width) {
