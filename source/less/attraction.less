@@ -17,6 +17,11 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+    width: 340px;
+  }
 }
 
 .attraction__list {
@@ -26,31 +31,26 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
 
-.control-label {
-  box-sizing: border-box;
-  width: 280px;
-  height: 58px;
-  padding: 0 16px 0 16px;
+  @media (min-width: @tablet-width) {
+    padding: 0 84px 0 84px;
+    gap: 16px 32px;
+  }
 
-  &--font {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
+  @media (min-width: @desktop-width) {
+    padding: 0 44px 0 44px;
+    gap: 16px 64px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .attraction {
-    width: @tablet-width;
+    width: calc(@tablet-width - 120px);
   }
 
   .attraction__list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 64px;
   }
 
   .attraction__item {
@@ -60,10 +60,10 @@
 
 @media (min-width: @desktop-width) {
   .attraction {
-    width: @desktop-width;
+    width: calc(@desktop-width - 240px);
   }
 
   .attraction__item {
-    width: 192px;
+    width: auto;
   }
 }

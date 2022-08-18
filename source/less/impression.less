@@ -2,8 +2,8 @@
   display: block;
   border: none;
   width: 280px;
-  margin: 0;
-  padding: 0 0 24px 0;
+  margin: 0 0 24px 0;
+  padding: 0;
 }
 
 .impression__title {
@@ -17,6 +17,10 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .impression__list {
@@ -26,12 +30,20 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 36px 0 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 53px 0 53px;
+    gap: 28px;
+  }
 }
 
 .control-label {
   box-sizing: border-box;
-  width: 280px;
-  height: 58px;
+  min-width: 140px;
   padding: 0 16px 0 16px;
 
   &--font {
@@ -44,7 +56,7 @@
 
 @media (min-width: @tablet-width) {
   .impression {
-    width: @tablet-width;
+    width: calc(@tablet-width - 120px);
   }
 
   .impression__list {
@@ -53,12 +65,37 @@
   }
 
   .impression__item {
-    width: 280px;
+    min-width: 280px;
+
+    @media (min-width: @desktop-width) {
+      min-width: 238px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .impression {
-    width: @desktop-width;
+    width: calc(@desktop-width - 240px);
   }
+}
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.control-mark {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 50%;
+}
+
+.control-input {
+  display: none;
 }

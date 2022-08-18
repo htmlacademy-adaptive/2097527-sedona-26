@@ -1,0 +1,41 @@
+.control-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.control-checkbox__label {
+  box-sizing: border-box;
+  max-width: 162px;
+  padding: 0 0 0 16px;
+
+  &--font {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+  }
+}
+
+.control-checkbox__mark {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.control-checkbox__input {
+  display: none;
+}
+
+.control-checkbox__input[type="checkbox"]:checked + .control-checkbox__mark::before {
+  position: absolute;
+  background-image: url("../img/form/check.svg");
+  color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 46px;
+  content: "";
+}

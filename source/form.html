@@ -54,13 +54,15 @@
     <h1 class="visually-hidden">Отзывы о Седоне</h1>
     <section class="hero-form">
       <div class="hero-form__img-wrapper">
-        <img class="hero-form__img" src="img/form/sedona.svg" width="229" height="39" alt="Sedona">
+        <div class="hero-form__img-wrapper--secondary">
+          <img class="hero-form__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        </div>
       </div>
-      <div class="hero-form__title-wrapper hero-form__title-wrapper--bevel">
+      <div class="hero-form__title-wrapper hero-form__titile-wrapper--bevel">
         <h2 class="hero-form__title hero-form__title--font">Оставьте свой отзыв</h2>
         <p class="hero-form__description hero-form__description--font">Помогите нашим отелям стать лучше! оставьте отзыв
           о них, а также о посещенных
-          вами достопримечательностях</p>
+ вами достопримечательностях</p>
       </div>
     </section>
     <section class="review">
@@ -71,16 +73,16 @@
           <ul class="full-name__list">
             <li class="full-name__item">
               <label class="full-name__desc full-name__desc--font" for="first-name">Имя*:</label>
-              <input class="full-name__input full-name__input--font" id="first-name" type="text" name="first-name"
+              <input class="full-name__input full-name__input--font" id="first-name" type="text" name="first-name" placeholder="Введите имя" value="Пётр"
                 required>
             </li>
             <li class="full-name__item">
               <label class="full-name__desc full-name__desc--font" for="surname">Фамилия*:</label>
-              <input class="full-name__input full-name__input--font" id="surname" type="text" name="surname" required>
+              <input class="full-name__input full-name__input--font" id="surname" type="text" name="surname" placeholder="Введите фамилию" value="Пустота" required>
             </li>
             <li class="full-name__item">
               <label class="full-name__desc full-name__desc--font" for="patronymic">Отчество:</label>
-              <input class="full-name__input full-name__input--font" id="patronymic" type="text" name="patronymic">
+              <input class="full-name__input full-name__input--font" id="patronymic" type="text" name="patronymic" placeholder="Введите отчество" value="Викторович">
             </li>
           </ul>
         </fieldset>
@@ -90,7 +92,7 @@
             <li class="contact__item">
               <label class="contact__desc contact__desc--font" for="phone-number">Контактный телефон*:</label>
               <div class="contact__input-container">
-                <input class="contact__input" id="phone-number" type="number" name="phone-number" required>
+                <input class="contact__input contact__input--font" id="phone-number" type="number" name="phone-number" placeholder="Введите телефон" required>
                 <span class="contact__input__icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -103,7 +105,7 @@
             <li class="contact__item">
               <label class="contact__desc contact__desc--font" for="email">Электронная почта*:</label>
               <div class="contact__input-container">
-                <input class="contact__input" id="email" type="email" name="email" required>
+                <input class="contact__input contact__input--font" id="email" type="email" name="email" placeholder="Введите e-mail" required>
                 <span class="contact__input__icon">
                   <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -120,23 +122,23 @@
           <ul class="impression__list">
             <li class="impression__item">
               <label class="control">
-                <input class="control-input" type="radio" name="impression" value="positive-impression" checked>
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Скорее положительное</span>
+                <input class="control__input" type="radio" name="impression" value="positive-impression" checked>
+                <span class="control__mark"></span>
+                <span class="control__label control__label--font">Скорее положительное</span>
               </label>
             </li>
             <li class="impression__item">
               <label class="control">
-                <input class="control-input" type="radio" name="impression" value="negative-impression">
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Скорее отрицательное</span>
+                <input class="control__input" type="radio" name="impression" value="negative-impression">
+                <span class="control__mark"></span>
+                <span class="control__label control__label--font">Скорее отрицательное</span>
               </label>
             </li>
             <li class="impression__item">
               <label class="control">
-                <input class="control-input" type="radio" name="impression" value="difficult-answer-impression">
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Затрудняюсь ответить</span>
+                <input class="control__input" type="radio" name="impression" value="difficult-answer-impression">
+                <span class="control__mark"></span>
+                <span class="control__label control__label--font">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -145,31 +147,31 @@
           <legend class="attraction__title attraction__title--font">Посещенные достопримечательности:</legend>
           <ul class="attraction__list">
             <li class="attraction__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="devils-bridge" checked>
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Мост Дьявола</span>
+              <label class="control-checkbox">
+                <input class="control-checkbox__input" type="checkbox" name="devils-bridge" checked>
+                <span class="control-checkbox__mark"></span>
+                <span class="control-checkbox__label control-checkbox__label--font">Мост Дьявола</span>
               </label>
             </li>
             <li class="attraction__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="mount-bell" checked>
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Гора-Колокол</span>
+              <label class="control-checkbox">
+                <input class="control-checkbox__input" type="checkbox" name="mount-bell" checked>
+                <span class="control-checkbox__mark"></span>
+                <span class="control-checkbox__label control-checkbox__label--font">Гора-Колокол</span>
               </label>
             </li>
             <li class="attraction__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="slide-park" checked>
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Слайд-парк</span>
+              <label class="control-checkbox">
+                <input class="control-checkbox__input" type="checkbox" name="slide-park" checked>
+                <span class="control-checkbox__mark"></span>
+                <span class="control-checkbox__label control-checkbox__label--font">Слайд-парк</span>
               </label>
             </li>
             <li class="attraction__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="red-rocks">
-                <span class="control-mark"></span>
-                <span class="control-label control-label--font">Красные скалы</span>
+              <label class="control-checkbox">
+                <input class="control-checkbox__input" type="checkbox" name="red-rocks">
+                <span class="control-checkbox__mark"></span>
+                <span class="control-checkbox__label control-checkbox__label--font">Красные скалы</span>
               </label>
             </li>
           </ul>

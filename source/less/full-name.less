@@ -2,8 +2,8 @@
   display: block;
   border: none;
   width: 280px;
-  margin: 0;
-  padding: 0 0 39px 0;
+  margin: 0 0 39px 0;
+  padding: 0;
 }
 
 .full-name__title {
@@ -16,6 +16,10 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -58,16 +62,24 @@
     font-weight: 700;
     color: #000000;
   }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .full-name {
-    width: calc(@tablet-width / 2 - 120px);
+    width: calc((@tablet-width - 120px) / 2);
   }
 }
 
 @media (min-width: @desktop-width) {
   .full-name {
-    width: calc(@desktop-width / 2 - 240px);
+    width: calc((@desktop-width - 240px) / 2);
   }
 }
