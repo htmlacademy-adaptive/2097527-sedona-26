@@ -4,6 +4,54 @@
   width: 280px;
   margin: 0;
   padding: 0 0 24px 0;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -54px;
+      left: 0;
+      display: block;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -54px;
+      right: 0;
+      display: block;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -54px;
+      left: 0;
+      display: block;
+      width: 280px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -54px;
+      right: 0;
+      display: block;
+      width: 280px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
 }
 
 .attraction__title {

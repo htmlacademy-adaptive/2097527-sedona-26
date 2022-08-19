@@ -4,6 +4,38 @@
   width: 280px;
   margin: 0 0 39px 0;
   padding: 0;
+
+  fieldset {
+    position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% + -26px);
+      left: 156px;
+      display: block;
+      width: 338px;
+      height: 1px;
+      background-color: #dbdbdb;
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% + -26px);
+      left: 326px;
+      display: block;
+      width: 338px;
+      height: 1px;
+      background-color: #dbdbdb;
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .full-name__title {

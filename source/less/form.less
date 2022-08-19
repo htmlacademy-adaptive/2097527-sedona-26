@@ -3,6 +3,25 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+
+  fieldset {
+    position: relative;
+  }
+
+  @media (max-width: @tablet-width) {
+    fieldset:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: -70px;
+      right: 0;
+      left: -20px;
+      margin: 0 auto;
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
