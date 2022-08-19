@@ -37,9 +37,39 @@
       width: @desktop-width;
     }
   }
+
+  @media (max-width: @tablet-width) {
+    li::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 1px);
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    li:first-child::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 .catalog__item {
+  position: relative;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     background-color: #f2f2f2;
   }
