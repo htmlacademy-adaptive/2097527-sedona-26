@@ -30,6 +30,21 @@
   flex-direction: column;
   gap: 48px;
   background: #eeeeee;
+
+  @media (max-width: @tablet-width) {
+    li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 24px);
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      display: block;
+      width: 284px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,4 +60,8 @@
   .advantages__item-wrapper {
     width: @desktop-width;
   }
+}
+
+.advantages__item {
+  position: relative;
 }
