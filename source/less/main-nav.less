@@ -1,7 +1,15 @@
 .main-nav {
-  position: block;
-  min-width: 320px;
+  width: 320px;
   min-height: 56px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-nav__toggle {

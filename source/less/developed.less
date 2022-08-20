@@ -1,9 +1,15 @@
 .developed {
   width: 230px;
   display: flex;
+  justify-content: center;
   gap: 2px;
-  padding-left: 80px;
   align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 170px;
+  }
 }
 
 .developed__text {

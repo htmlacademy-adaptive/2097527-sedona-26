@@ -22,18 +22,21 @@
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
         </svg>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--closed site-list--nojs">
         <li class="site-list__item site-list__item--current">
           <a class="site-list__link" href="index.html">
             Главная
           </a>
+          <button class="site-list__close button" type="button">
+            <span class="visually-hidden">Закрыть меню навигации</span>
+          </button>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">
             Фото и видео
           </a>
         </li>
-        <li class="site-list__item site-list__logo-place"></li>
+        <li class="site-list__logo-place"></li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">
             Форма отзыва
@@ -51,7 +54,9 @@
     <h1 class="visually-hidden">Каталог фото и видео города Седона</h1>
     <section class="hero">
       <div class="hero__img-wrapper">
-        <img class="hero__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        <div class="hero__img-wrapper--secondary">
+          <img class="hero__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+        </div>
       </div>
       <div class="hero__title-wrapper hero__titile-wrapper--bevel">
         <h2 class="hero__title hero__title--font">Фото и видео</h2>
@@ -65,69 +70,85 @@
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--primary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/non-native-spaces-mobile.jpg" width="280" height="280"
+            <img class="catalog-photo__img" src="img/catalog/non-native-spaces.jpg" width="280" height="280"
               alt="Дорога, уходящая в даль">
-            <h3 class="catalog-photo__title catalog-photo__title--font">Неродные просторы</h3>
-            <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Борис</cite>
-            <div class="catalog-photo__likes">
-              <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                  fill="#81B3D2" />
-              </svg>
-              <span class="catalog-photo__count-likes catalog-photo__count-likes--font">1350</span>
+            <div class="catalog-photo__description-wrapper">
+              <div class="catalog-photo__description">
+                <h3 class="catalog-photo__title catalog-photo__title--font">Неродные просторы</h3>
+                <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Борис</cite>
+              </div>
+              <div class="catalog-photo__likes">
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="catalog-photo__count-likes catalog-photo__count-likes--font">1350</span>
+              </div>
             </div>
           </blockquote>
         </li>
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/local-vegetation-mobile.jpg" width="280" height="280"
+            <img class="catalog-photo__img" src="img/catalog/local-vegetation.jpg" width="280" height="280"
               alt="Красивое растение на фоне гор">
-            <h3 class="catalog-photo__title">Местная растительность</h3>
-            <cite class="catalog-photo__autor">Автор фото: Сергей</cite>
-            <div class="catalog-photo__likes">
-              <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                  fill="#81B3D2" />
-              </svg>
-              <span class="catalog-photo__count-likes">143</span>
+            <div class="catalog-photo__description-wrapper">
+              <div class="catalog-photo__description">
+                <h3 class="catalog-photo__title catalog-photo__title--font">Местная растительность</h3>
+                <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Сергей</cite>
+              </div>
+              <div class="catalog-photo__likes">
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="catalog-photo__count-likes catalog-photo__count-likes--font">143</span>
+              </div>
             </div>
           </blockquote>
         </li>
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/road-north-mobile.jpg" width="280" height="280"
+            <img class="catalog-photo__img" src="img/catalog/road-north.jpg" width="280" height="280"
               alt="Дорога в горах">
-            <h3 class="catalog-photo__title">Дорога на север</h3>
-            <cite class="catalog-photo__autor">Автор фото: Петр</cite>
-            <div class="catalog-photo__likes">
-              <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                  fill="#81B3D2" />
-              </svg>
-              <span class="catalog-photo__count-likes">96</span>
+            <div class="catalog-photo__description-wrapper">
+              <div class="catalog-photo__description">
+                <h3 class="catalog-photo__title catalog-photo__title--font">Дорога на север</h3>
+                <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Петр</cite>
+              </div>
+              <div class="catalog-photo__likes">
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="catalog-photo__count-likes catalog-photo__count-likes--font">96</span>
+              </div>
             </div>
           </blockquote>
         </li>
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/devil-bridge-mobile.jpg" width="280" height="280"
+            <img class="catalog-photo__img" src="img/catalog/devil-bridge.jpg" width="280" height="280"
               alt="Мост дьявола">
-            <h3 class="catalog-photo__title">Мост дьявола</h3>
-            <cite class="catalog-photo__autor">Автор фото: Антон</cite>
-            <div class="catalog-photo__likes">
-              <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                  fill="#81B3D2" />
-              </svg>
-              <span class="catalog-photo__count-likes">254</span>
+            <div class="catalog-photo__description-wrapper">
+              <div class="catalog-photo__description">
+                <h3 class="catalog-photo__title catalog-photo__title--font">Мост дьявола</h3>
+                <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Антон</cite>
+              </div>
+              <div class="catalog-photo__likes">
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="catalog-photo__count-likes catalog-photo__count-likes--font">254</span>
+              </div>
             </div>
           </blockquote>
         </li>
@@ -175,17 +196,18 @@
     <section class="main-footer__developed developed">
       <p class="developed__text">Разработано</p>
       <div class="developed__svg-wrapper">
-        <svg class="developed__svg" width="27" height="34" viewBox="0 0 24 29" fill="none"
+        <svg class="developed__svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
-            d="M12.13 0h-.09L0 1.2v21L12.04 29 24 22.2v-21L12.13 0ZM22.3 10.29 12.04 4.51v-.09h-.08l-.1-.08v.08L1.7 10.3V2.64l10.26-1.02L22.3 2.64v7.65Zm-10.34-4.5 10.26 5.7-4.02 2.2-6.33-3.57v1.2l5.26 2.97-.8.42-4.46-2.55v1.2l3.39 1.95-.72.42-2.67-1.53v1.2l1.7.93-1.61.93-10.18-5.7 10.18-5.78ZM1.7 12.83l10.17 5.78v.86l-7.05-4v1.19l7.14 4.08v.94l-7.14-4v1.19l7.14 4.08 7.22-4.17v-4.42l3.04-1.7v8.5l-10.26 5.87L1.7 21.26v-8.42Z"
-            fill="#81B3D2" />
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+            fill="#000" />
         </svg>
         <span class="visually-hidden">Иконка Академии</span>
       </div>
     </section>
   </footer>
 
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

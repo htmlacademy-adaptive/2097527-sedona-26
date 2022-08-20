@@ -2,8 +2,8 @@
   display: block;
   border: none;
   width: 280px;
-  margin: 0;
-  padding: 0 0 39px 0;
+  margin: 0 0 34px 0;
+  padding: 0;
 }
 
 .contact__title {
@@ -16,6 +16,10 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -53,10 +57,19 @@
   padding: 0 16px 0 16px;
 
   &--font {
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 344px;
   }
 }
 
@@ -79,7 +92,7 @@
   }
 
   .contact {
-    width: 280px;
+    width: calc((@tablet-width - 120px) / 2);
   }
 
   .contact__list {
@@ -93,7 +106,7 @@
 
 @media (min-width: @desktop-width) {
   .contact {
-    width: 430px;
+    width: calc((@desktop-width - 240px) / 2);
   }
 
   .contact__item {

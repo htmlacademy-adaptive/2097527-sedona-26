@@ -12,28 +12,48 @@
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
 .intro__img-wrapper {
   box-sizing: border-box;
   min-height: 389px;
-  padding: 90px 0 0 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/background-intro.jpg") no-repeat, rgb(89, 166, 230);
-}
+  background: url("../img/background-intro.jpg") no-repeat 50%, rgb(89, 166, 230);
+  background-size: cover;
 
-@media (min-width: @tablet-width) {
-  .intro::after {
-    display: none;
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+  }
+
+  &--secondary {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../img/intro-triangle.svg") bottom no-repeat;
   }
 }
 
 .intro__title-wrapper {
   padding: 32px 20px 16px 20px;
   text-align: center;
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 20px 55px 20px;
+    width: 520px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 59px 20px 45px 20px;
+  }
 }
 
 .intro__title {
@@ -53,5 +73,17 @@
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+  }
+}
+
+.intro__img {
+  margin-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 78px;
   }
 }

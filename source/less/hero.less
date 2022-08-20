@@ -6,35 +6,90 @@
 .hero__img-wrapper {
   box-sizing: border-box;
   min-height: 158px;
-  background-color: rgb(89, 166, 230);
-  padding: 52px 0 0 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  background: url("../img/intro-triangle.svg") bottom no-repeat, url("../img/catalog/hero.jpg") bottom no-repeat;
+  background: url("../img/catalog/hero.jpg") no-repeat 50%, rgb(89, 166, 230);
+  background-size: 902px auto;
+  background-position-y: bottom;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    background-size: 1200px 518px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 301px;
+  }
+
+  &--secondary {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../img/intro-triangle.svg") bottom no-repeat;
+  }
 }
 
 .hero__title-wrapper {
-  padding: 33px 20px 16px 20px;
+  padding: 37px 20px 25px 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 62px 162px 67px 162px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 382px 65px 382px;
+  }
 }
 
 .hero__title {
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
 
   &--font {
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
   }
 }
 
 .hero__description {
-  margin: 0;
+  margin: 0 0 21px 0;
 
   &--font {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+  }
+
+  @media (max-width: @tablet-width) {
+    & ::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 24px);
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      display: block;
+      width: 284px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
+  }
+}
+
+.hero__img {
+  margin-top: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 95px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 101px;
   }
 }
