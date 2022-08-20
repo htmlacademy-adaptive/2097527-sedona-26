@@ -425,7 +425,7 @@
 }
 @media (min-width: 1200px) {
   .advantages-card-img__title {
-    width: 150px;
+    width: 170px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -471,7 +471,7 @@
 }
 @media (min-width: 1200px) {
   .advantages-card-img__wrapper--secondary {
-    padding: 51px 83px 53px 83px;
+    padding: 51px 53px 53px 51px;
   }
 }
 .advantages-card-img__img {
@@ -1123,6 +1123,7 @@
 @media (min-width: 1200px) {
   .catalog-photo__like {
     color: #ffffff;
+    opacity: 1;
   }
 }
 .catalog-photo__likes {
@@ -2044,6 +2045,7 @@
 }
 .control__mark {
   display: block;
+  position: relative;
   width: 46px;
   height: 46px;
   background: #f2f2f2;
@@ -2054,6 +2056,7 @@
 }
 .control__input[type="radio"]:checked + .control__mark::before {
   position: absolute;
+  display: block;
   top: 15px;
   left: 15px;
   width: 16px;
