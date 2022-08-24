@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2097527-sedona-26/6/">
+</head>
+
+<body class="page__body page__body--style">
+  <header class="main-header">
+    <div class="main-header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/nav-logo.svg" width="185" height="96" alt="City of Sedona.">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle button main-nav__toggle--style" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+        </svg>
+      </button>
+      <ul class="main-nav__list site-list site-list--closed site-list--nojs">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link" href="index.html">
+            Главная
+          </a>
+          <button class="site-list__close button" type="button">
+            <span class="visually-hidden">Закрыть меню навигации</span>
+          </button>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__logo-place"></li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru/">
+            Html academy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Седона - курортный городок!</h1>
+    <section class="intro">
+      <div class="intro__img-wrapper">
+        <div class="intro__img-wrapper--secondary">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index/intro-banner-text-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/index/intro-banner-text-tablet.svg">
+            <img class="intro__img" src="img/index/intro-banner-text.svg" width="282" height="214"
+              alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'">
+          </picture>
+        </div>
+      </div>
+      <div class="intro__title-wrapper intro__titile-wrapper--bevel">
+        <h2 class="intro__title intro__title--font">Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h2>
+        <p class="intro__description intro__description--font">Рассмотрим 5 причин, по которым Седона круче, чем гранд
+          каньон!</p>
+      </div>
+    </section>
+    <section class="advantages">
+      <ol class="advantages__list advantages__list--style">
+        <li class="advantages__item">
+          <div class="advantages-card-img">
+            <div class="advantages-card-img__wrapper">
+              <h2 class="advantages-card-img__title advantages-card-img__title--style">Настоящий городок</h2>
+              <p class="advantages-card-img__number advantages-card-img__number--style">—&nbsp;№1&nbsp;—</p>
+              <p class="advantages-card-img__description advantages-card-img__description--style">Седона не аттракцион
+                для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="advantages-card-img__img advantages-card-img__img--sedona-streat">
+              <span class="visually-hidden">Улицы Седоны</span>
+            </div>
+          </div>
+          <ul class="advantages__city-list advantages-city">
+            <li class="advantages-city__item">
+              <div class="advantages-city-card advantages-city-card--home">
+                <svg class="advantages-city-card__svg" width="75" height="72" viewBox="0 0 80 80" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M75.9 43.18 78 41.1l-9.94-9.84V4.4H54.2v13.12L40.45 4 3 41.2l2.1 2.08 7.84-7.76v37.6H9.02V76h64.16v-2.88h-5.12v-37.7l7.83 7.76ZM57.11 7.38h7.93v20.98l-7.93-7.85V7.38Zm7.93 65.64h-49.1V32.54l24.5-24.36 24.6 24.36v40.48Zm-31.93-4.48h16.06V44.77H33.12v23.77Zm13.05-2.88H36.03v-18h10.14v18ZM40.85 39.3a7.78 7.78 0 0 1-7.73-7.75 7.63 7.63 0 0 1 7.73-7.66 7.72 7.72 0 0 1 7.83 7.66 7.8 7.8 0 0 1-7.83 7.75Zm5.02-7.75a5.01 5.01 0 0 0-10.04 0 5.01 5.01 0 0 0 10.04 0ZM23.08 44.77h-3.01v3.88h3.01v-3.88Zm3.01 0h3.01v3.88h-3v-3.88Zm-3.01 5.97h-3.01v3.88h3.01v-3.88Zm3.01 0h3.01v3.88h-3v-3.88Zm29.12-5.97H52.2v3.88h3v-3.88Zm3.01 0h3.01v3.88h-3v-3.88Zm-3.01 5.97H52.2v3.88h3v-3.88Zm3.01 0h3.01v3.88h-3v-3.88Z"
+                    fill="#81B3D2" />
+                </svg>
+                <div class="advantages-city-card__container advantages-city-card__container--primary">
+                  <h3 class="advantages-city-card__title">Жилье</h3>
+                  <p class="advantages-city-card__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages-city__item">
+              <div class="advantages-city-card advantages-city-card--eat">
+                <svg class="advantages-city-card__svg" width="76" height="68" viewBox="0 0 80 80" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M72.53 36.37c.02-.82.06-1.94-.02-2.23C71.81 18.52 57.45 6 39.8 6S7.69 18.52 6.99 34.14v3H72.5l.02-.77ZM39.8 9c15.96 0 29.12 11.22 29.72 25.14H9.98C10.68 20.22 23.84 9 39.8 9ZM23.24 48.86l-5.38-4-5.49 4L6 44.16l1.8-2.4 4.58 3.3 5.49-4 5.38 4 5.49-4 5.49 4 5.48-4 5.39 4 5.48-4 5.49 4 5.48-4 5.49 4 4.59-3.3 1.7 2.4-6.3 4.7-5.48-4-5.48 4-5.49-4-5.48 4-5.39-4-5.48 4-5.49-4-5.49 4ZM6.3 52.06h67.4c2.4 0 4.29 2.01 4.29 4.21v3.5c0 2.41-2 4.31-4.29 4.31h-1v1A9.91 9.91 0 0 1 62.83 75H17.16a9.92 9.92 0 0 1-9.87-9.91v-1h-1c-2.4 0-4.29-1.9-4.29-4.21v-3.5c0-2.31 1.9-4.31 4.29-4.31ZM62.94 72a6.9 6.9 0 0 0 6.88-6.91v-1H10.18v1a6.9 6.9 0 0 0 6.88 6.9h45.88Zm10.77-10.92c.7 0 1.3-.6 1.3-1.3h.1v-3.4c0-.7-.6-1.3-1.3-1.3H6.3c-.7 0-1.3.6-1.3 1.2v3.5c0 .7.6 1.3 1.3 1.3h67.4ZM41.9 21.62a2 2 0 1 1-4 .01 2 2 0 0 1 4 0Zm-9.98-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm17.95-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
+                    fill="#81B3D2" />
+                </svg>
+                <div class="advantages-city-card__container advantages-city-card__container--secondary">
+                  <h3 class="advantages-city-card__title">Еда</h3>
+                  <p class="advantages-city-card__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages-city__item">
+              <div class="advantages-city-card advantages-city-card--present">
+                <svg class="advantages-city-card__svg" width="64" height="75" viewBox="0 0 80 80" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M69.2 25.12H44.8c13.6-6.8 14.7-11.1 14.2-13.5-1.1-3.9-5.6-6.9-9.8-5.3-5.5 2.1-7 10.3-8.5 16.2-1.9-6-3.7-13.6-8-17.5-1.2-1.1-3-2.2-5.7-2-4 .4-9.7 5.3-7.3 10.8 2.2 5.3 9.5 8.7 14.4 11.4H11.8a2.8 2.8 0 0 0-2.8 2.8v11.2c0 1.6 1.3 2.8 2.8 2.8h.3V78h57V42.01h.1c1.6 0 2.8-1.3 2.8-2.8v-11.2c0-1.6-1.3-2.9-2.8-2.9ZM50.8 8.82c2.1-.3 4.9 1.3 5.2 3.2.4 2.7-3.3 5.2-5 6.3-2.5 1.7-4.9 2.6-7.2 4 .8-3.7 2.5-12.9 7-13.5Zm-22.6 9.8c-2.2-1.5-6.4-4.4-6.3-7.7.1-3.6 5.7-6.5 8.7-3.8 3.8 3.3 5.6 11 7 16.4-3.2-1.6-6.2-2.8-9.4-4.9ZM34.1 75H15V42.01h19.1v33Zm0-35.99H12v-10.9h22.1v10.9Zm10 36H37V28.1h7.1V75Zm22 0h-19V42h19.1v33h-.1ZM69 39H47.1V28.1H69V39Z"
+                    fill="#81B3D2" />
+                </svg>
+                <div class="advantages-city-card__container advantages-city-card__container--tertiary">
+                  <h3 class="advantages-city-card__title">Сувениры</h3>
+                  <p class="advantages-city-card__description">Не только китайского,<br> но и местного производства!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages-card-img">
+            <div class="advantages-card-img__wrapper advantages-card-img__wrapper--secondary">
+              <h2 class="advantages-card-img__title advantages-card-img__title--style">Там есть мост дьявола</h2>
+              <p class="advantages-card-img__number advantages-card-img__number--style">—&nbsp;№2&nbsp;—</p>
+              <p class="advantages-card-img__description advantages-card-img__description--style">Да, по нему можно
+                пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages-card-img__img advantages-card-img__img--devil-bridge">
+              <span class="visually-hidden">Мост дьявола</span>
+            </div>
+          </div>
+        </li>
+        <div class="advantages__item-wrapper">
+          <li class="advantages__item">
+            <div class="advantages-card advantages-card--primary">
+              <h2 class="advantages-card__title advantages-card-img__title--style advantages-card__title--primary">
+                Небольшая площадь</h2>
+              <p class="advantages-card__number advantages-card-img__number--style">—&nbsp;№3&nbsp;—</p>
+              <p class="advantages-card__description advantages-card-img__description--style">Все интересные места
+                находятся очень близко</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-card advantages-card--secondary">
+              <h2 class="advantages-card__title advantages-card-img__title--style advantages-card__title--secondary">
+                Красивая дорога</h2>
+              <p class="advantages-card__number advantages-card-img__number--style">—&nbsp;№4&nbsp;—</p>
+              <p class="advantages-card__description advantages-card-img__description--style">Ехать в Седону из
+                Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-card advantages-card--tertiary">
+              <h2 class="advantages-card__title advantages-card-img__title--style advantages-card__title--tertiary">Мало
+                туристов</h2>
+              <p class="advantages-card__number advantages-card-img__number--style">—&nbsp;№5&nbsp;—</p>
+              <p class="advantages-card__description advantages-card-img__description--style">Большинство едет в гранд
+                каньон и толпится там</p>
+            </div>
+          </li>
+        </div>
+      </ol>
+    </section>
+    <section class="hotel-search">
+      <h2 class="hotel-search__title hotel-search__title--font">Заинтересовались?</h2>
+      <p class="hotel-search__description hotel-search__description--font">Укажите предполагаемые даты поездки,<br> и мы
+        покажем вам лучшие предложения
+        гостиниц в седоне</p>
+      <button class="hotel-search__button button hotel-search__button--style" type="button">Найти гостиницу</button>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Седона на карте</h2>
+      <iframe class="map__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332008.86989861034!2d-111.8445075187785!3d35.006514354840384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1659298411909!5m2!1sru!2sru"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        Ваш браузер не поддерживает интерактивную карту
+      </iframe>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="main-footer__hash-tag hash-tag">
+      <p class="hash-tag__text hash-tag__text--style">#visitSEDONA</p>
+    </section>
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item social__link--vkontakte">
+          <a class="social__link " href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item social__link--telegram">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social__item social__link--youtube">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="main-footer__developed developed">
+      <p class="developed__text">Разработано</p>
+      <div class="developed__svg-wrapper">
+        <svg class="developed__svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+            fill="#000" />
+        </svg>
+        <span class="visually-hidden">Иконка Академии</span>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
