@@ -55,7 +55,11 @@
     <section class="hero">
       <div class="hero__img-wrapper">
         <div class="hero__img-wrapper--secondary">
-          <img class="hero__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/catalog/sedona-tablet.svg">
+            <img class="hero__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+          </picture>
         </div>
       </div>
       <div class="hero__title-wrapper hero__titile-wrapper--bevel">

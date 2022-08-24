@@ -55,8 +55,12 @@
     <section class="intro">
       <div class="intro__img-wrapper">
         <div class="intro__img-wrapper--secondary">
-          <img class="intro__img" src="img/index/intro-banner-text.svg" width="282" height="214"
-            alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index/intro-banner-text-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/index/intro-banner-text-tablet.svg">
+            <img class="intro__img" src="img/index/intro-banner-text.svg" width="282" height="214"
+              alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'">
+          </picture>
         </div>
       </div>
       <div class="intro__title-wrapper intro__titile-wrapper--bevel">
