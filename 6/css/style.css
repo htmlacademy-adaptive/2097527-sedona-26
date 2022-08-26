@@ -1867,6 +1867,9 @@
 .comment__textarea {
   box-sizing: border-box;
   width: 279px;
+  max-width: 280px;
+  min-width: 200px;
+  min-height: 50px;
   height: 150px;
   padding: 16px;
   margin: 0 0 56px 0;
@@ -1926,6 +1929,9 @@
     display: block;
     margin: 0 auto 48px auto;
     width: calc(768px - (2 * 60px));
+    max-width: 648px;
+    min-width: 400px;
+    min-height: 50px;
   }
   .form__required-field {
     padding-top: 24px;
@@ -1938,6 +1944,9 @@
   }
   .comment__textarea {
     width: calc(1200px - (2 * 120px + 192px));
+    max-width: 768px;
+    min-width: 400px;
+    min-height: 50px;
   }
 }
 .advantages-city-card {
