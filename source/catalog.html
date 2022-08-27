@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+  <link rel="icon" href="img/favicons/152.png">
+  <link rel="icon" href="img/favicons/192.png">
+  <link rel="icon" href="img/favicons/512.png">
 </head>
 
 <body class="page__body page__body--style">
@@ -55,7 +61,11 @@
     <section class="hero">
       <div class="hero__img-wrapper">
         <div class="hero__img-wrapper--secondary">
-          <img class="hero__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/catalog/sedona-tablet.svg">
+            <img class="hero__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+          </picture>
         </div>
       </div>
       <div class="hero__title-wrapper hero__titile-wrapper--bevel">
@@ -70,8 +80,14 @@
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--primary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/non-native-spaces.jpg" width="280" height="280"
-              alt="Дорога, уходящая в даль">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/non-native-spaces-desktop.jpg 1x, img/catalog/non-native-spaces-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/non-native-spaces-tablet.jpg 1x, img/catalog/non-native-spaces-tablet@2x.jpg 2x">
+              <img class="catalog-photo__img" src="img/catalog/non-native-spaces.jpg"
+                srcset="img/catalog/non-native-spaces@x2.jpg 2x" width="280" height="280" alt="Дорога, уходящая в даль">
+            </picture>
             <div class="catalog-photo__description-wrapper">
               <div class="catalog-photo__description">
                 <h3 class="catalog-photo__title catalog-photo__title--font">Неродные просторы</h3>
@@ -91,8 +107,15 @@
         </li>
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/local-vegetation.jpg" width="280" height="280"
-              alt="Красивое растение на фоне гор">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/local-vegetation-desktop.jpg 1x, img/catalog/local-vegetation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/local-vegetation-tablet.jpg 1x, img/catalog/local-vegetation-tablet@2x.jpg 2x">
+              <img class="catalog-photo__img" src="img/catalog/local-vegetation.jpg"
+                srcset="img/catalog/local-vegetation@x2.jpg 2x" width="280" height="280"
+                alt="Красивое растение на фоне гор">
+            </picture>
             <div class="catalog-photo__description-wrapper">
               <div class="catalog-photo__description">
                 <h3 class="catalog-photo__title catalog-photo__title--font">Местная растительность</h3>
@@ -112,8 +135,14 @@
         </li>
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/road-north.jpg" width="280" height="280"
-              alt="Дорога в горах">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/road-north-desktop.jpg 1x, img/catalog/road-north-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/road-north-tablet.jpg 1x, img/catalog/road-north-tablet@2x.jpg 2x">
+              <img class="catalog-photo__img" src="img/catalog/road-north.jpg" srcset="img/catalog/road-north@x2.jpg 2x"
+                width="280" height="280" alt="Дорога в горах">
+            </picture>
             <div class="catalog-photo__description-wrapper">
               <div class="catalog-photo__description">
                 <h3 class="catalog-photo__title catalog-photo__title--font">Дорога на север</h3>
@@ -133,8 +162,14 @@
         </li>
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
-            <img class="catalog-photo__img" src="img/catalog/devil-bridge.jpg" width="280" height="280"
-              alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/devil-bridge-desktop.jpg 1x, img/catalog/devil-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/devil-bridge-tablet.jpg 1x, img/catalog/devil-bridge-tablet@2x.jpg 2x">
+              <img class="catalog-photo__img" src="img/catalog/devil-bridge.jpg"
+                srcset="img/catalog/devil-bridge@x2.jpg 2x" width="280" height="280" alt="Мост дьявола">
+            </picture>
             <div class="catalog-photo__description-wrapper">
               <div class="catalog-photo__description">
                 <h3 class="catalog-photo__title catalog-photo__title--font">Мост дьявола</h3>
@@ -158,7 +193,7 @@
       <div class="presentation__text-wrapper">
         <h2 class="presentation__title presentation__title--font">Все еще сомневаетесь?</h2>
         <p class="presentation__description presentation__description--font">Смотрите видеопрезентацию и скорее за
-          билетами, пока они не подорожали в
+          билетами, пока они<br> не подорожали в
           очередной раз!</p>
       </div>
       <div class="presentation__video">
@@ -207,7 +242,7 @@
     </section>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

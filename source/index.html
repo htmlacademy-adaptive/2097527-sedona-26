@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+  <link rel="icon" href="img/favicons/152.png">
+  <link rel="icon" href="img/favicons/192.png">
+  <link rel="icon" href="img/favicons/512.png">
 </head>
 
 <body class="page__body page__body--style">
@@ -55,8 +61,12 @@
     <section class="intro">
       <div class="intro__img-wrapper">
         <div class="intro__img-wrapper--secondary">
-          <img class="intro__img" src="img/index/intro-banner-text.svg" width="282" height="214"
-            alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index/intro-banner-text-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/index/intro-banner-text-tablet.svg">
+            <img class="intro__img" src="img/index/intro-banner-text.svg" width="282" height="214"
+              alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'">
+          </picture>
         </div>
       </div>
       <div class="intro__title-wrapper intro__titile-wrapper--bevel">
@@ -121,7 +131,7 @@
                 </svg>
                 <div class="advantages-city-card__container advantages-city-card__container--tertiary">
                   <h3 class="advantages-city-card__title">Сувениры</h3>
-                  <p class="advantages-city-card__description">Не только китайского, но и местного производства!</p>
+                  <p class="advantages-city-card__description">Не только китайского,<br> но и местного производства!</p>
                 </div>
               </div>
             </li>
@@ -173,7 +183,7 @@
     </section>
     <section class="hotel-search">
       <h2 class="hotel-search__title hotel-search__title--font">Заинтересовались?</h2>
-      <p class="hotel-search__description hotel-search__description--font">Укажите предполагаемые даты поездки, и мы
+      <p class="hotel-search__description hotel-search__description--font">Укажите предполагаемые даты поездки,<br> и мы
         покажем вам лучшие предложения
         гостиниц в седоне</p>
       <button class="hotel-search__button button hotel-search__button--style" type="button">Найти гостиницу</button>
@@ -225,7 +235,7 @@
     </section>
   </footer>
 
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

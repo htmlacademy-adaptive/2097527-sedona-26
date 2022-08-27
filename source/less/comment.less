@@ -75,6 +75,9 @@
 .comment__textarea {
   box-sizing: border-box;
   width: 279px;
+  max-width: 280px;
+  min-width: 200px;
+  min-height: 50px;
   height: 150px;
   padding: 16px;
   margin: 0 0 56px 0;
@@ -138,6 +141,9 @@
     display: block;
     margin: 0 auto 48px auto;
     width: calc(@tablet-width - (2 * 60px));
+    max-width: 648px;
+    min-width: 400px;
+    min-height: 50px;
   }
 
   .form__required-field {
@@ -153,5 +159,8 @@
 
   .comment__textarea {
     width: calc(@desktop-width - (2 * 120px + 192px));
+    max-width: 768px;
+    min-width: 400px;
+    min-height: 50px;
   }
 }

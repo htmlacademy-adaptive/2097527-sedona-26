@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+  <link rel="icon" href="img/favicons/152.png">
+  <link rel="icon" href="img/favicons/192.png">
+  <link rel="icon" href="img/favicons/512.png">
 </head>
 
 <body class="page__body page__body--style">
@@ -55,7 +61,11 @@
     <section class="hero-form">
       <div class="hero-form__img-wrapper">
         <div class="hero-form__img-wrapper--secondary">
-          <img class="hero-form__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/catalog/sedona-tablet.svg">
+            <img class="hero-form__img" src="img/catalog/sedona.svg" width="229" height="39" alt="Sedona">
+          </picture>
         </div>
       </div>
       <div class="hero-form__title-wrapper">
@@ -126,21 +136,21 @@
           <legend class="impression__title impression__title--font">Ваше общее впечатление:</legend>
           <ul class="impression__list">
             <li class="impression__item">
-              <label class="control">
+              <label class="control button">
                 <input class="control__input" type="radio" name="impression" value="positive-impression" checked>
                 <span class="control__mark"></span>
                 <span class="control__label control__label--font">Скорее положительное</span>
               </label>
             </li>
             <li class="impression__item">
-              <label class="control">
+              <label class="control button">
                 <input class="control__input" type="radio" name="impression" value="negative-impression">
                 <span class="control__mark"></span>
                 <span class="control__label control__label--font">Скорее отрицательное</span>
               </label>
             </li>
             <li class="impression__item">
-              <label class="control">
+              <label class="control button">
                 <input class="control__input" type="radio" name="impression" value="difficult-answer-impression">
                 <span class="control__mark"></span>
                 <span class="control__label control__label--font">Затрудняюсь ответить</span>
@@ -152,28 +162,28 @@
           <legend class="attraction__title attraction__title--font">Посещенные достопримечательности:</legend>
           <ul class="attraction__list">
             <li class="attraction__item">
-              <label class="control-checkbox">
+              <label class="control-checkbox button">
                 <input class="control-checkbox__input" type="checkbox" name="devils-bridge" checked>
                 <span class="control-checkbox__mark"></span>
                 <span class="control-checkbox__label control-checkbox__label--font">Мост Дьявола</span>
               </label>
             </li>
             <li class="attraction__item">
-              <label class="control-checkbox">
+              <label class="control-checkbox button">
                 <input class="control-checkbox__input" type="checkbox" name="mount-bell" checked>
                 <span class="control-checkbox__mark"></span>
                 <span class="control-checkbox__label control-checkbox__label--font">Гора-Колокол</span>
               </label>
             </li>
             <li class="attraction__item">
-              <label class="control-checkbox">
+              <label class="control-checkbox button">
                 <input class="control-checkbox__input" type="checkbox" name="slide-park" checked>
                 <span class="control-checkbox__mark"></span>
                 <span class="control-checkbox__label control-checkbox__label--font">Слайд-парк</span>
               </label>
             </li>
             <li class="attraction__item">
-              <label class="control-checkbox">
+              <label class="control-checkbox button">
                 <input class="control-checkbox__input" type="checkbox" name="red-rocks">
                 <span class="control-checkbox__mark"></span>
                 <span class="control-checkbox__label control-checkbox__label--font">Красные скалы</span>
@@ -229,7 +239,7 @@
     </section>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

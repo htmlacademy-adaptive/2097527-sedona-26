@@ -25,7 +25,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 180px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -61,7 +61,7 @@
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
     width: 400px;
-    padding: 47px 52px 56px 53px;
+    padding: 47px 56px 56px 56px;
   }
 
   &--secondary {
@@ -72,7 +72,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 51px 53px 53px 51px;
+      padding: 51px 85px 53px 85px;
     }
   }
 }
@@ -90,8 +90,18 @@
     background-size: cover;
     background-position: 50%;
 
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/sedona-streat@x2.jpg") no-repeat 50%, rgb(89, 166, 230);
+      background-size: 512px auto;
+    }
+
+    @media (min-width: @tablet-width) {
+      background-size: 520px auto;
+    }
+
     @media (min-width: @desktop-width) {
       background-position: 50% -68px;
+      background-size: 800px auto;
     }
   }
 
@@ -101,13 +111,19 @@
     background-size: cover;
     background-position: 50%;
 
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/devil-bridge@x2.jpg") no-repeat 50%, rgb(89, 166, 230);
+      background-size: 512px auto;
+    }
+
     @media (min-width: @tablet-width) {
-      background-position: 50%;
+      background-size: 520px auto;
       order: -1;
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 50% -16px;
+      background-position: 50% -46px;
+      background-size: 800px auto;
     }
   }
 

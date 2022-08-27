@@ -28,8 +28,14 @@
   background: url("../img/background-intro.jpg") no-repeat 50%, rgb(89, 166, 230);
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/background-intro@x2.jpg") no-repeat 50%, rgb(89, 166, 230);
+    background-size: 901px auto;
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 518px;
+    background-size: 1200px auto;
   }
 
   &--secondary {
@@ -41,7 +47,7 @@
 }
 
 .intro__title-wrapper {
-  padding: 32px 20px 16px 20px;
+  padding: 32px 0 16px 0;
   text-align: center;
   width: 270px;
   margin: 0 auto;
@@ -81,9 +87,12 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 77px;
+    width: 461px;
+    height: auto;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 78px;
+    width: 460px;
   }
 }
