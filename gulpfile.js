@@ -109,7 +109,7 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html').on('change', gulp.series(html, browser.reload));
 }
 
 export const build = gulp.series(
