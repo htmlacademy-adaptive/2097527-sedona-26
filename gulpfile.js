@@ -4,8 +4,10 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import htmlmin from 'gulp-htmlmin';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import terser from 'gulp-terser';
 
 // Styles
 
@@ -18,8 +20,20 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest('build'));
+}
+
+export const script = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
 }
 
 // Server
@@ -27,7 +41,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -45,5 +59,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+   script, html, styles, server, watcher
 );
