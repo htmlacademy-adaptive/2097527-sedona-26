@@ -9,6 +9,8 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 
 // Styles
 
@@ -48,6 +50,22 @@ export const createWebp = () => {
   .pipe(squoosh({
     webp: {}
   }))
+  .pipe(gulp.dest('build/img'))
+}
+
+export const svg = () => {
+  return gulp.src('source/img/**/*.svg')
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'))
+}
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'))
 }
 
