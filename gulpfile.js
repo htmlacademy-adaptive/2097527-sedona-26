@@ -8,6 +8,7 @@ import htmlmin from 'gulp-htmlmin';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
 
 // Styles
 
@@ -34,6 +35,20 @@ export const script = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
+}
+
+export const images = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+}
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'))
 }
 
 // Server
