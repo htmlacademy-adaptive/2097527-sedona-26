@@ -25,7 +25,7 @@
       <button class="main-nav__toggle button main-nav__toggle--style" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#toggle-button"></use>
+          <use xlink:href="img/sprite.svg#menu-row-lines"></use>
         </svg>
       </button>
       <ul class="main-nav__list site-list site-list--closed site-list--nojs">
@@ -100,8 +100,8 @@
                 <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Борис</cite>
               </div>
               <div class="catalog-photo__likes">
-                <svg class="catalog-photo__like" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 23 21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
                 <span class="catalog-photo__count-likes catalog-photo__count-likes--font">1350</span>
               </div>
@@ -111,6 +111,12 @@
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="img/catalog/local-vegetation-desktop.webp 1x, img/catalog/local-vegetation-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/catalog/local-vegetation-tablet.webp 1x, img/catalog/local-vegetation-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/local-vegetation.webp 1x, img/catalog/local-vegetation@x2.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/local-vegetation-desktop.jpg 1x, img/catalog/local-vegetation-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -125,8 +131,8 @@
                 <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Сергей</cite>
               </div>
               <div class="catalog-photo__likes">
-                <svg class="catalog-photo__like" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 23 21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
                 <span class="catalog-photo__count-likes catalog-photo__count-likes--font">143</span>
               </div>
@@ -136,6 +142,11 @@
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="img/catalog/road-north-desktop.webp 1x, img/catalog/road-north-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/catalog/road-north-tablet.webp 1x, img/catalog/road-north-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/road-north.webp 1x, img/catalog/road-north@x2.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/road-north-desktop.jpg 1x, img/catalog/road-north-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -149,8 +160,8 @@
                 <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Петр</cite>
               </div>
               <div class="catalog-photo__likes">
-                <svg class="catalog-photo__like" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 23 21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
                 <span class="catalog-photo__count-likes catalog-photo__count-likes--font">96</span>
               </div>
@@ -160,6 +171,13 @@
         <li class="catalog__item catalog__item--secondary">
           <blockquote class="catalog-photo">
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="img/catalog/devil-bridge-desktop.webp 1x, img/catalog/devil-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/catalog/devil-bridge-tablet.webp 1x, img/catalog/devil-bridge-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/devil-bridge.webp 1x, img/catalog/devil-bridge@x2.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/devil-bridge-desktop.jpg 1x, img/catalog/devil-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -173,8 +191,8 @@
                 <cite class="catalog-photo__autor catalog-photo__autor--font">Автор фото: Антон</cite>
               </div>
               <div class="catalog-photo__likes">
-                <svg class="catalog-photo__like" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                <svg class="catalog-photo__like" width="22" height="20" viewBox="0 0 23 21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
                 <span class="catalog-photo__count-likes catalog-photo__count-likes--font">254</span>
               </div>
@@ -225,7 +243,7 @@
       <p class="developed__text">Разработано</p>
       <div class="developed__svg-wrapper">
         <svg class="developed__svg" width="27" height="35">
-          <use xlink:href="img/sprite.svg#icon-academy"></use>
+          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
         </svg>
         <span class="visually-hidden">Иконка Академии</span>
       </div>
