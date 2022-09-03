@@ -47,6 +47,9 @@
   font-display: swap;
 }
 
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,5 +66,18 @@
   cursor: pointer;
 }
 
-@tablet-width: 768px;
-@desktop-width: 1200px;
+.button--blue {
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}
