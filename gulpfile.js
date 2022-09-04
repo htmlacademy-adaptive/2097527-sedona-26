@@ -124,7 +124,7 @@ export const build = gulp.series(
     sprite,
     createWebp
   )
-)
+);
 
 export default gulp.series(
   clean,
