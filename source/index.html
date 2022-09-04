@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="../fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -177,7 +178,7 @@
       <p class="hotel-search__description hotel-search__description--font">Укажите предполагаемые даты поездки,<br> и мы
         покажем вам лучшие предложения
         гостиниц в седоне</p>
-      <button class="hotel-search__button button hotel-search__button--style" type="button">Найти гостиницу</button>
+      <button class="hotel-search__button button hotel-search__button--style button--condition" type="button">Найти гостиницу</button>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
@@ -195,18 +196,27 @@
     <section class="main-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
-        <li class="social__item social__link--vkontakte">
+        <li class="social__item button--condition">
           <a class="social__link " href="#">
+            <svg class="social__svg" width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social__item social__link--telegram">
+        <li class="social__item button--condition">
           <a class="social__link" href="#">
+            <svg class="social__svg" width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="social__item social__link--youtube">
+        <li class="social__item button--condition">
           <a class="social__link" href="#">
+            <svg class="social__svg" width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
@@ -215,7 +225,7 @@
     <section class="main-footer__developed developed">
       <p class="developed__text">Разработано</p>
       <div class="developed__svg-wrapper">
-        <svg class="developed__svg" width="27" height="35">
+        <svg class="developed__svg button" width="27" height="35">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
         </svg>
         <span class="visually-hidden">Иконка Академии</span>
