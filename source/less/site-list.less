@@ -48,6 +48,7 @@
   min-height: 55px;
   background: #81b3d2;
   mix-blend-mode: normal;
+  max-width: 320px;
 
   @media (min-width: @tablet-width) {
     width: calc((768px - 185px) / 4);
@@ -78,7 +79,7 @@
   max-width: 250px;
 
   @media (min-width: @tablet-width) {
-    max-width: 190px;
+    max-width: 145px;
     padding: 15px 10px;
     font-weight: 700;
     font-size: 14px;
@@ -93,6 +94,10 @@
       color: #000000;
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 253px;
   }
 
   &:hover {

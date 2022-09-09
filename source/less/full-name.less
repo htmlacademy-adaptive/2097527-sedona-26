@@ -42,6 +42,7 @@
   padding: 24px 20px 0 20px;
   margin-bottom: 20px;
   text-align: center;
+  max-width: 240px;
 
   &--font {
     font-size: 18px;
@@ -52,6 +53,11 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
+    max-width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 360px;
   }
 }
 
@@ -71,12 +77,21 @@
 
 .full-name__desc {
   padding: 0 16px 0 16px;
+  max-width: 240px;
 
   &--font {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
     color: #333333;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 410px;
   }
 }
 
