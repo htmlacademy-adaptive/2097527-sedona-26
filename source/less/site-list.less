@@ -38,6 +38,10 @@
     display: block;
     min-height: 56px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+  }
 }
 
 .site-list__item {
@@ -58,7 +62,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: calc((1200px - 185px) / 4);
+    width: calc((1200px - 240px) / 4);
   }
 
   &--current a {

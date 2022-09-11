@@ -16,7 +16,7 @@
 }
 
 .advantages-card-img__title {
-  margin: 0 0 11px 0;
+  margin: 0 0 14px 0;
   max-width: 280px;
 
   &--style {
@@ -33,7 +33,7 @@
 }
 
 .advantages-card-img__number {
-  margin: 0 0 17px 0;
+  margin: 0 auto 23px auto;
   max-width: 280px;
 
   &--style {
@@ -42,7 +42,7 @@
 }
 
 .advantages-card-img__description {
-  margin: 0;
+  margin: 0 auto 0 auto;
   max-width: 280px;
 
   &--style {
@@ -68,7 +68,7 @@
   }
 
   &--secondary {
-    padding: 39px 16px 35px 15px;
+    padding: 39px 20px 35px 20px;
 
     @media (min-width: @tablet-width) {
       padding: 43px 36px 41px 36px;
@@ -109,14 +109,13 @@
   }
 
   &--devil-bridge {
-    background-image: url("../img/index/devil-bridge.jpg");
+    background: url("../img/index/devil-bridge.jpg"), rgb(89, 166, 230);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: 50%;
+    background-size: 512px auto;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/index/devil-bridge@x2.jpg") no-repeat 50%, rgb(89, 166, 230);
-      background-size: 512px auto;
+      background: url("../img/index/devil-bridge@x2.jpg"), rgb(89, 166, 230);
     }
 
     @media (min-width: @tablet-width) {
@@ -125,7 +124,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 50% -46px;
+      background-position: 50% -15px;
       background-size: 800px auto;
     }
   }
