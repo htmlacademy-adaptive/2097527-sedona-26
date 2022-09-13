@@ -39,7 +39,7 @@
 }
 
 .full-name__title {
-  padding: 24px 20px 0 20px;
+  padding: 25px 20px 0 18px;
   margin-bottom: 20px;
   text-align: center;
   max-width: 240px;
@@ -49,15 +49,21 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     max-width: 260px;
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 360px;
+    padding-left: 32px;
   }
 }
 
@@ -88,6 +94,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 270px;
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,6 +111,7 @@
   padding: 0 16px 0 16px;
 
   &--font {
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;

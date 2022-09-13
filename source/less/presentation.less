@@ -10,14 +10,15 @@
 
 .presentation__title {
   max-width: 266px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 27px auto;
 
   @media (min-width: @tablet-width) {
     max-width: 445px;
+    margin-bottom: 32px;
   }
 
   &--font {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
 
@@ -52,12 +53,12 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
-    padding: 62px 60px 26px 60px;
+    padding: 56px 60px 19px 60px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 64px;
-    padding: 62px 377px 26px 377px;
+    padding: 60px 377px 23px 377px;
   }
 }
 
@@ -88,5 +89,13 @@
     width: 800px;
     background-size: 800px auto;
     margin-bottom: 84px;
+  }
+}
+
+.presentation__button-play {
+  margin: 4px 0 0 14px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }

@@ -7,8 +7,8 @@
 }
 
 .contact__title {
-  padding: 24px 20px 0 20px;
-  margin-bottom: 20px;
+  padding: 26px 20px 0 20px;
+  margin-bottom: 19px;
   text-align: center;
   max-width: 240px;
 
@@ -17,15 +17,21 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 28px;
-    max-width: 240px;
+    margin-bottom: 26px;
+    max-width: 285px;
+    padding-left: 23px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 320px;
+    padding-left: 32px;
   }
 }
 
@@ -56,6 +62,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 270px;
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -154,4 +161,8 @@
   .contact__item {
     width: 402px;
   }
+}
+
+.contact__svg {
+  margin-top: 5px;
 }

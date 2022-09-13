@@ -65,12 +65,20 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     padding-top: 18px;
     margin-bottom: 28px;
     max-width: 360px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 62px;
   }
 }
 
@@ -82,7 +90,7 @@
   min-height: 50px;
   height: 150px;
   padding: 16px;
-  margin: 0 0 56px 0;
+  margin: 0 0 50px 0;
   background: #f2f2f2;
   border: none;
   font-family: "PT Sans", sans-serif;
@@ -119,6 +127,7 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
+    margin: 0 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -142,8 +151,9 @@
   }
 
   .form__required-field {
-    padding-top: 24px;
+    padding-top: 22px;
     margin: 0 0 auto auto;
+    font-size: 14px;
   }
 }
 
@@ -157,5 +167,9 @@
     max-width: 768px;
     min-width: 400px;
     min-height: 50px;
+  }
+
+  .form__required-field {
+    width: 256px;
   }
 }
