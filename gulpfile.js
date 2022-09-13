@@ -13,8 +13,6 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 
-// Styles
-
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
@@ -90,8 +88,6 @@ const clean = () => {
   return del('build');
 }
 
-// Server
-
 const server = (done) => {
   browser.init({
     server: {
@@ -103,8 +99,6 @@ const server = (done) => {
   });
   done();
 }
-
-// Watcher
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));

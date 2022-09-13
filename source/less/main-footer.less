@@ -5,20 +5,24 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 20px 23px 20px;
+  padding: 32px 20px 23px 20px;
   min-width: 280px;
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    max-width: 768px;
     box-sizing: border-box;
     width: @tablet-width;
     margin: 0 auto;
     flex-direction: row;
-    padding: 36px 60px 36px 45px;
+    padding: 86px 60px 36px 28px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 36px 120px 36px 104px;
-    width: @desktop-width;
+    padding: 120px 120px 36px 87px;
+    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -34,6 +38,6 @@
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 6px 0 0;
   }
 }

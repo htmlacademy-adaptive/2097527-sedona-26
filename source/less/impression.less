@@ -55,19 +55,31 @@
 }
 
 .impression__title {
-  padding: 24px 20px 0 20px;
+  padding: 26px 20px 0 20px;
   margin-bottom: 20px;
   text-align: center;
+  max-width: 240px;
 
   &--font {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
+    max-width: 360px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 33px;
+    margin-bottom: 45px;
   }
 }
 
@@ -84,7 +96,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 53px 0 53px;
+    padding: 0 11px 0 53px;
     gap: 28px;
   }
 }
@@ -101,15 +113,15 @@
 
   .impression__item {
     min-width: 280px;
-
-    @media (min-width: @desktop-width) {
-      min-width: 238px;
-    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .impression {
     width: calc(@desktop-width - 240px);
+  }
+
+  .impression__item {
+    min-width: 280px;
   }
 }

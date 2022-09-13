@@ -2,13 +2,15 @@
   width: 230px;
   display: flex;
   justify-content: center;
-  gap: 2px;
+  gap: 0;
   align-items: center;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 170px;
+    width: 162px;
+    justify-content: flex-end;
+    gap: 10px;
   }
 
   &:hover {
@@ -26,8 +28,12 @@
   width: 90px;
   min-height: 21px;
   margin: 0;
-  padding: 0 15px;
+  padding: 0 10px 0 0;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 15px;
+  }
 }
 
 .developed__svg-wrapper {

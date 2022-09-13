@@ -1,7 +1,7 @@
 .catalog-photo {
   position: relative;
   margin: 0;
-  padding: 24px 20px 25px 20px;
+  padding: 24px 20px 27px 20px;
   display: flex;
   flex-direction: column;
 
@@ -12,18 +12,17 @@
 
 .catalog-photo__description-wrapper {
   box-sizing: border-box;
-  padding: 11px 20px 0 0;
+  padding: 15px 20px 0 0;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 11px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 22px 20px 15px 21px;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 0;
@@ -33,6 +32,8 @@
 
 .catalog-photo__title {
   margin: 0;
+  padding-right: 10px;
+  max-width: 240px;
 
   &--font {
     font-size: 14px;
@@ -40,32 +41,54 @@
     color: #000000;
   }
 
+  @media (min-width: @tablet-width) {
+    max-width: 180px;
+  }
+
   @media (min-width: @desktop-width) {
     color: #ffffff;
+    max-width: 200px;
+    max-height: 40px;
+    overflow: auto;
   }
 }
 
 .catalog-photo__autor {
   display: block;
   margin: 0;
+  padding-right: 10px;
+  max-width: 240px;
 
   &--font {
     font-style: normal;
     color: #333333;
   }
 
+  @media (min-width: @tablet-width) {
+    max-width: 160px;
+  }
+
   @media (min-width: @desktop-width) {
     color: #ffffff;
+    max-width: 200px;
+    max-height: 40px;
+    overflow: auto;
   }
 }
 
 .catalog-photo__count-likes {
+  display: block;
+  max-width: 50px;
+  padding-top: 5px;
+
   &--font {
     font-weight: 700;
     color: #000000;
 
     @media (min-width: @desktop-width) {
       color: #ffffff;
+      max-height: 40px;
+      overflow: auto;
     }
   }
 }
@@ -79,9 +102,13 @@
 }
 
 .catalog-photo__like {
-  margin-right: 14px;
+  margin-right: 16px;
   color: #000000;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
@@ -94,7 +121,8 @@
 }
 
 .catalog-photo__likes {
-  max-width: 100px;
+  display: flex;
+  flex-direction: row;
 
   @media (min-width: @tablet-width) {
     padding-top: 6px;
@@ -103,4 +131,8 @@
 
 .catalog-photo__description {
   margin: 0 0 11px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+  }
 }
