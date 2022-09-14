@@ -32,6 +32,18 @@
 
 .main-nav__list {
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    li:nth-child(4n+2) {
+      margin-right: 153px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    li:nth-child(4n+2) {
+      margin-right: 240px;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
