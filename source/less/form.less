@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 14px;
 
   fieldset {
     position: relative;
@@ -30,19 +31,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: @tablet-width;
-    padding: 0 60px 64px 60px;
+    padding: 0 60px 54px 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form {
     width: @desktop-width;
-    padding: 0 120px 64px 120px;
+    padding: 0 120px 54px 120px;
   }
 }
 
 .form__required-field {
-  margin: 0 0 24px auto;
+  margin: -10px 0 14px auto;
   max-width: 280px;
 
   &--font {
@@ -54,6 +55,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 320px;
+    margin: 0 0 24px auto;
   }
 
   @media (min-width: @desktop-width) {
