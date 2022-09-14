@@ -103,14 +103,14 @@
   min-height: 260px;
 
   &--sedona-streat {
-    background-image: url("../img/index/sedona-streat.jpg");
+    background: url("../img/index/sedona-streat.jpg") no-repeat, rgb(89, 166, 230);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/index/sedona-streat@x2.jpg") no-repeat 50%, rgb(89, 166, 230);
-      background-size: 512px auto;
+      background-size: 512px 260px;
     }
 
     @media (min-width: @tablet-width) {
@@ -124,13 +124,15 @@
   }
 
   &--devil-bridge {
-    background: url("../img/index/devil-bridge.jpg"), rgb(89, 166, 230);
+    background: url("../img/index/devil-bridge.jpg") no-repeat, rgb(89, 166, 230);
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 512px auto;
+    background-size: 512px 260px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/index/devil-bridge@x2.jpg"), rgb(89, 166, 230);
+      background: url("../img/index/devil-bridge@x2.jpg") no-repeat, rgb(89, 166, 230);
+      background-position: 50%;
+      background-size: 512px 260px;
     }
 
     @media (min-width: @tablet-width) {
